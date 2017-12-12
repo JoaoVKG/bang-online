@@ -1,0 +1,9 @@
+.card {
+    display: inline-block;
+    /* width: 200px;
+    height: 350px; */
+    width: 10%;
+    height: 100%;
+    min-height: 350px;
+    min-width: 200px;
+}
