@@ -1,0 +1,3 @@
+<div (window:resize)="posicionarCartas()" id="deck-el" class="deck fixed-bottom">
+    <app-carta *ngFor="let carta of deck; index as indice" [carta]="carta" (click)="selecionarCarta(indice)" #cartael></app-carta>
+</div>

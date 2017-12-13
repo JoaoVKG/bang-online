@@ -3,7 +3,30 @@
     /* width: 200px;
     height: 350px; */
     width: 10%;
-    height: 100%;
-    min-height: 350px;
-    min-width: 200px;
+    height: 80%;
+    min-height: 150px;
+    min-width: 210px;
+}
+
+.card-title {
+    font-family: BangFont;
+    font-size: 50px;
+    color: black;
+}
+
+.card-text > img {
+    width: 10%;
+    height: 200px;
+    min-width: 150px;
+}
+
+.numero {
+    font-size: 17px;
+}
+
+.naipe {
+    position: relative;
+    top: 2px;
+    height: 20px;
+    width: 20px;
 }

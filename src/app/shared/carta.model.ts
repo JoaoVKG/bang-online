@@ -8,7 +8,7 @@ export class Carta {
         public descricao: string,
         public tipo,
         public naipe: Naipe,
-        public numero: number,
+        public numero: string,
         public vida: number
     ) {}
 }
