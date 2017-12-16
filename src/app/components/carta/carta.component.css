@@ -39,9 +39,10 @@
 }
 
 .card-miniatura .card-body {
-    padding-top: 2vh;
+    padding-top: 1.5vh;
     padding-right: 4px;
     padding-left: 4px;
+    padding-bottom: 1vh;
 }
 
 .card-miniatura .card-title {
@@ -49,17 +50,19 @@
 }
 
 .card-miniatura .card-text > img {
-    width: 3.2vw;
-    height: 6.5vh;
+    width: 3.4vw;
+    height: 7vh;
 }
 
 .card-miniatura .numero {
+    position: relative;
+    bottom: 0.5vh;
     font-size: 1vh;
 }
 
 .card-miniatura .naipe {
     position: relative;
-    top: 0.25vh;
+    top: -0.15vh;
     height: 0.9255vh;
     width: 0.5208vw;
 }
