@@ -1,2 +1,16 @@
-<app-carta *ngFor="let carta of baralho" [carta]="carta"></app-carta>
+<app-carta *ngFor="let carta of baralho; index as indice" [carta]="carta" [isMiniatura]="true" (zoomNaCarta)="zoomNaCarta($event)"></app-carta>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-4">
+            <app-jogador></app-jogador>
+        </div>
+        <div class="col-4">
+            <app-jogador></app-jogador>
+        </div>
+        <div class="col-4">
+            <app-jogador></app-jogador>
+        </div>
+    </div>
+</div>
+<app-modalcard [cartaComZoom]="cartaComZoom"></app-modalcard>
 <app-deck (atualizarCemiterio)="atualizarCemiterio($event)"></app-deck>

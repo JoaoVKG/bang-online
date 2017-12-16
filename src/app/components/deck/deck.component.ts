@@ -17,7 +17,7 @@ export class DeckComponent implements OnInit, AfterViewInit {
     new Carta('esquiva!', 'assets/img/esquiva_fixed.png', '','esquiva', Naipe.PAUS, 'A', 0),
     new Carta('esquiva!', 'assets/img/esquiva_fixed.png', '','esquiva', Naipe.PAUS, 'A', 0),
     new Carta('esquiva!', 'assets/img/esquiva_fixed.png', '','esquiva', Naipe.PAUS, 'A', 0),
-    new Carta('esquiva!', 'assets/img/esquiva_fixed.png', '','esquiva', Naipe.PAUS, 'A', 0)
+    new Carta('duelo', 'assets/img/duelo_fixed.png', '','duelo', Naipe.ESPADAS, 'Q', 0)
   ];
 
   @Output() atualizarCemiterio: EventEmitter<Carta> = new EventEmitter();

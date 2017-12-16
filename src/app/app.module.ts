@@ -5,13 +5,17 @@ import { AppComponent } from './app.component';
 import { CartaComponent } from './components/carta/carta.component';
 import { MesaComponent } from './components/mesa/mesa.component';
 import { DeckComponent } from './components/deck/deck.component';
+import { JogadorComponent } from './components/jogador/jogador.component';
+import { ModalcardComponent } from './components/modalcard/modalcard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CartaComponent,
     MesaComponent,
-    DeckComponent
+    DeckComponent,
+    JogadorComponent,
+    ModalcardComponent
   ],
   imports: [
     BrowserModule

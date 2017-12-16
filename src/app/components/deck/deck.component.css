@@ -1,32 +1,37 @@
 .deck {
-    height: 200px;
+    height: 15vh;
     width: 100%;
     border: 1px solid black;
     border-top-left-radius: calc(.25rem - 1px);
     border-top-right-radius: calc(.25rem - 1px);
-    padding-top: 5px;
 }
 
 @keyframes cardHovered {
-    from {bottom: -170px;}
-    to {bottom: 0px;}
+    from {bottom: -15vh;}
+    to {bottom: 0vh;}
+}
+
+@keyframes cardHovered2 {
+    from {z-index: initial;}
+    to {z-index: 1000;}
 }
 
 @keyframes cardUnhovered {
-    from {bottom: 0px;}
-    to {bottom: -170px;}
+    from {bottom: 0vh;}
+    to {bottom: -15vh;}
 }
+
 
 .deck > app-carta {
     position: absolute;
     animation-name: cardUnhovered;
     animation-duration: 0.1s;
-    bottom: -170px;
+    bottom: -15vh;
 }
 
 .deck > app-carta:hover {
-    animation-name: cardHovered;
-    animation-duration: 0.3s;
+    animation-name: cardHovered, cardHovered2;
+    animation-duration: 0.3s, 0.1s;
     z-index: 1000;
     bottom: 0px;
 }

@@ -2,31 +2,64 @@
     display: inline-block;
     /* width: 200px;
     height: 350px; */
-    width: 10%;
-    height: 80%;
-    min-height: 150px;
-    min-width: 210px;
+    width: 10.9375vw;
+    min-height: 31vh;
+    max-height: 33.7vh;
+    /* min-width: 210px; */
 }
 
 .card-title {
     font-family: BangFont;
-    font-size: 50px;
+    font-size: 3vh;
     color: black;
 }
 
 .card-text > img {
-    width: 10%;
-    height: 200px;
-    min-width: 150px;
+    width: 7.8125vw;
+    height: 18.518vh;
 }
 
 .numero {
-    font-size: 17px;
+    font-size: 2vh;
 }
 
 .naipe {
     position: relative;
-    top: 2px;
-    height: 20px;
-    width: 20px;
+    top: 0.5vh;
+    height: 1.851vh;
+    width: 1.0416vw;
+}
+
+/* Miniatura das cartas */
+
+.card-miniatura {
+    width: 5.46875vw;
+    min-height: 14.5vh;
+    max-height: 15.85vh; 
+}
+
+.card-miniatura .card-body {
+    padding-top: 2vh;
+    padding-right: 4px;
+    padding-left: 4px;
+}
+
+.card-miniatura .card-title {
+    font-size: 1vh;
+}
+
+.card-miniatura .card-text > img {
+    width: 3.2vw;
+    height: 6.5vh;
+}
+
+.card-miniatura .numero {
+    font-size: 1vh;
+}
+
+.card-miniatura .naipe {
+    position: relative;
+    top: 0.25vh;
+    height: 0.9255vh;
+    width: 0.5208vw;
 }

@@ -2,7 +2,7 @@ import { Component, OnInit, Output } from '@angular/core';
 import { Carta } from '../../shared/carta.model';
 import { Naipe } from '../../shared/naipe.enum';
 import { Jogador } from '../../shared/jogador.model';
-
+declare var $:any;
 @Component({
   selector: 'app-mesa',
   templateUrl: './mesa.component.html',
@@ -21,9 +21,17 @@ export class MesaComponent implements OnInit {
 
   cemiterio: Carta[] = [];
 
+  cartaComZoom: Carta;
+
   public atualizarCemiterio(carta: Carta): void {
     this.cemiterio.push(carta);
     console.log(this.cemiterio);
+  }
+
+  zoomNaCarta(carta: Carta) {
+    console.log(carta);
+    this.cartaComZoom = carta;
+    $('#modalCard').modal('show');
   }
 
   constructor() { }
